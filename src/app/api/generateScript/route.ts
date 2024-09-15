@@ -13,7 +13,7 @@ export async function POST(req: Request): Promise<Response> {
   const { prompt } = await req.json();
 
   const response = await openai.chat.completions.create({
-    model: "nousresearch/hermes-3-llama-3.1-405b",
+    model: "nousresearch/hermes-3-llama-3.1-405b:free",
     messages: [
       {
         role: "system",
