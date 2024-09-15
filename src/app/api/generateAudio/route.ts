@@ -27,6 +27,7 @@ export async function POST(req: Request): Promise<Response> {
     
     const options = {
       method: 'GET',
+      url: 'https://express-voic-text-to-speech.p.rapidapi.com/getAllVoice',
       hostname: 'express-voic-text-to-speech.p.rapidapi.com',
       port: null,
       path: `/getAudioLink?service=StreamElements&voice=Joanna&text=${encodeURIComponent(narratorScript)}`,
